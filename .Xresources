@@ -1,0 +1,58 @@
+URxvt.font: xft:monospace:size=8
+URxvt.scrollBar: false
+
+! Base16 Yesterday
+! Scheme: FroZnShiva (https://github.com/FroZnShiva)
+
+URxvt*background:                     #1d1f21
+URxvt*foreground:                     #d6d6d6
+URxvt*cursorColor:                    #d6d6d6
+
+URxvt*scrollColor:                    #d6d6d6
+URxvt*highlightColor:                 #4d4d4c
+URxvt*highlightTextColor:             #8e908c
+
+URxvt*color0:                         #1d1f21
+URxvt*color1:                         #c82829
+URxvt*color2:                         #718c00
+URxvt*color3:                         #eab700
+URxvt*color4:                         #4271ae
+URxvt*color5:                         #8959a8
+URxvt*color6:                         #3e999f
+URxvt*color7:                         #d6d6d6
+URxvt*color8:                         #969896
+URxvt*color9:                         #c82829
+URxvt*color10:                        #718c00
+URxvt*color11:                        #eab700
+URxvt*color12:                        #4271ae
+URxvt*color13:                        #8959a8
+URxvt*color14:                        #3e999f
+URxvt*color15:                        #ffffff
+
+URxvt*color16:                        #f5871f
+URxvt*color17:                        #7f2a1d
+URxvt*color18:                        #282a2e
+URxvt*color19:                        #4d4d4c
+URxvt*color20:                        #8e908c
+URxvt*color21:                        #efefef
+
+URxvt.perl-ext-common: default,resize-font,url-select,keyboard-select
+
+!
+!resize-font
+!
+URxvt.keysym.Control-Shift-0: resize-font:reset
+URxvt.keysym.Control-Meta-0: resize-font:show
+
+
+!
+!url-select
+!
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+
+!
+!keyboard-select
+!
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
