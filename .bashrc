@@ -14,8 +14,9 @@ export NVM_DIR="$HOME/.nvm"
 
 alias config='/usr/bin/git --git-dir=/home/jmmorillo/.cfg/ --work-tree=/home/jmmorillo'
 
-. ~/Tools/git-completion.bash
-. ~/Tools/git-prompt.sh
+export GIT_BASH_DIR="$HOME/Tools/git"
+. $GIT_BASH_DIR/git-completion.bash
+. $GIT_BASH_DIR/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1='[\u@\h \w]$(__git_ps1 " (%s)")\$ '
+export PS1='[\u@\h \W]$(__git_ps1 " (%s)")\$ '
 
